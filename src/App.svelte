@@ -48,10 +48,10 @@
     }
   }
   main {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
+    padding: 0 5rem;
+    @media (max-width: 600px) {
+      padding: 0 1rem;
+    }
   }
 </style>
 
