@@ -1,3 +1,7 @@
+<script>
+  import Terminal from "../components/Terminal.svelte";
+</script>
+
 <div>
-  <h1>Home</h1>
+  <Terminal />
 </div>

@@ -13,12 +13,6 @@
   const toggleNav = () => {
     navState = !navState;
   };
-  let width;
-  $: if (width > 600) {
-    navState = false;
-  } else {
-    navState = true;
-  }
   let navState = true;
 </script>
 
@@ -33,7 +27,7 @@
       padding: 0.3rem 0.5rem;
     }
     @media (max-width: 600px) {
-      position: relative;
+      align-items: center;
       padding: 0.5rem 16px;
     }
     :global(& > :nth-child(1)) {
@@ -45,7 +39,7 @@
     :global(div.menu) {
       display: none;
       @media (max-width: 600px) {
-        display: inline-flex;
+        display: inline-block;
         cursor: pointer;
       }
     }
@@ -61,7 +55,6 @@
   }
 </style>
 
-<svelte:window bind:innerWidth={width} />
 <Router {url}>
   <header>
     <Link to="/">

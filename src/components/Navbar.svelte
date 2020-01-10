@@ -5,6 +5,13 @@
 
   let navs = ["Projects", "Contact", "Blog", "Uses"];
   export let inactive;
+  let width;
+  let navState;
+  $: if (width > 600) {
+    navState = true;
+  } else {
+    navState = false;
+  }
   export let toggleNav;
 </script>
 
@@ -27,7 +34,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      background: #ffc600;
+      background: #fdfdfd;
       height: 100vh;
       width: 200px;
     }
@@ -52,8 +59,26 @@
   }
 </style>
 
-{#if !inactive}
+<svelte:window bind:innerWidth={width} />
+{#if navState && inactive}
   <nav in:fly={{ x: 200, duration: 1500 }} out:fly={{ x: 200, duration: 500 }}>
+    {#each navs as nav}
+      <Link to={nav.toLowerCase()}>
+        <Icon icon={nav.toLowerCase()} width="1rem" />
+        {nav}
+      </Link>
+    {/each}
+    <a href="https://github.com/iykekings" target="blank">
+      <Icon icon="github" width="1rem" />
+      Github
+    </a>
+  </nav>
+{/if}
+{#if !inactive && !navState}
+  <nav
+    in:fly={{ x: 200, duration: 1500 }}
+    out:fly={{ x: 200, duration: 500 }}
+    class:inactive>
     <Icon icon="arrowRight" width="1.3rem" cls="close" on:click={toggleNav} />
     {#each navs as nav}
       <Link to={nav.toLowerCase()} on:click={toggleNav}>

@@ -9,7 +9,7 @@
 
 <style>
   div {
-    display: inline-flex;
+    display: inline-block;
     width: 1.3rem;
     margin-right: 0.3rem;
   }
