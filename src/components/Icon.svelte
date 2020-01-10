@@ -2,6 +2,8 @@
   import collections from "../assets/icons.js";
   export let icon;
   export let width;
+  export let cls;
+
   // export let fill;
 </script>
 
@@ -13,6 +15,6 @@
   }
 </style>
 
-<div style="width: {width}">
+<div style="width: {width}" class={!cls ? '' : cls} on:click>
   {@html collections[icon]}
 </div>
