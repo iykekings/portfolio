@@ -35,6 +35,7 @@
       align-items: center;
       font-size: 1.3rem;
       color: #2a2a2a;
+      font-weight: 600;
     }
     :global(div.menu) {
       display: none;

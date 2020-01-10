@@ -4,10 +4,14 @@
 
 <style lang="scss">
   .terminal {
+    @media (max-width: 768px) {
+      width: 80%;
+    }
     @media (max-width: 600px) {
       width: 100%;
     }
-    width: 90%;
+    width: 70%;
+    max-width: 650px;
     min-height: 320px;
     background-color: #193549;
     color: #33cc33;
@@ -38,7 +42,6 @@
       width: 100%;
       padding: 1rem 2rem;
       text-align: left;
-      font-family: monospace;
       font-size: 1rem;
       p {
         margin: 0;

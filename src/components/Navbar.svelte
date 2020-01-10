@@ -34,6 +34,7 @@
       right: 0;
       top: 0;
       bottom: 0;
+      z-index: 999;
       background: #fdfdfd;
       height: 100vh;
       width: 200px;
