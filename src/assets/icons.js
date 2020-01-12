@@ -35,6 +35,23 @@ C91.353,93.904,91.527,95.04,91.276,95.295z"/>
   arrowRight: `<svg enable-background="new 0 0 32 32"  id="Слой_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#121313" fill-rule="evenodd" id="Arrow_Forward"/><g/><g/><g/><g/><g/><g/></svg>`,
   menu: `<svg id="i-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"  stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
   <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24" />
+</svg>`,
+  send1: `<svg id="i-send" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"  fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<path d="M2 16 L30 2 16 30 12 20 Z M30 2 L12 20" />
+</svg>`,
+  send: `<svg viewBox="0 0 20 18" 
+<g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Rounded" transform="translate(-374.000000, -1529.000000)">
+        <g id="Content" transform="translate(100.000000, 1428.000000)">
+            <g id="-Round-/-Content-/-send" transform="translate(272.000000, 98.000000)">
+                <g>
+                    <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                    <path d="M3.4,20.4 L20.85,12.92 C21.66,12.57 21.66,11.43 20.85,11.08 L3.4,3.6 C2.74,3.31 2.01,3.8 2.01,4.51 L2,9.12 C2,9.62 2.37,10.05 2.87,10.11 L17,12 L2.87,13.88 C2.37,13.95 2,14.38 2,14.88 L2.01,19.49 C2.01,20.2 2.74,20.69 3.4,20.4 Z" id="🔹Icon-Color" fill="#fff"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</g>
 </svg>`
 
 }

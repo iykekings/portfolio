@@ -18,6 +18,10 @@
 
 <style type="text/scss">
   header {
+    position: sticky;
+    top: 0px;
+    z-index: 900;
+    background: white;
     display: flex;
     padding: 0.3rem 1rem;
     width: 100%;
@@ -49,10 +53,8 @@
     }
   }
   main {
-    padding: 0 5rem;
-    @media (max-width: 600px) {
-      padding: 0 1rem;
-    }
+    display: flex;
+    flex-direction: column;
   }
 </style>
 

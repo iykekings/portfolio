@@ -10,7 +10,6 @@
     @media (max-width: 600px) {
       width: 100%;
     }
-    width: 70%;
     max-width: 650px;
     min-height: 320px;
     background-color: #193549;
@@ -21,6 +20,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
+    z-index: 2;
     .circles {
       position: absolute;
       left: 0;
@@ -53,6 +53,7 @@
       }
       .output {
         color: #33cc33;
+        font-weight: 300;
       }
     }
   }

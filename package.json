@@ -9,9 +9,9 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "dev": "sirv public --dev -s",
+    "start:dev": "sirv public --dev -s",
     "start": "sirv public -s",
-    "start:dev": "rollup -c -w"
+    "dev": "rollup -c -w"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
@@ -25,6 +25,7 @@
     "svelte-preprocess": "^3.3.0"
   },
   "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
     "sirv-cli": "^0.4.4",
     "svelte-routing": "^1.4.0"
   }
