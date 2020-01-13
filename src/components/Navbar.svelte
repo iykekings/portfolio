@@ -46,6 +46,8 @@
       margin-right: 3.2rem;
       display: flex;
       font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
       align-self: end;
       @media (max-width: 768px) {
         margin-right: 1.2rem;
