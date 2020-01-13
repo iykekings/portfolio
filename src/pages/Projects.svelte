@@ -7,6 +7,11 @@
   });
 </script>
 
-<main>
-  <h1>Projects</h1>
-</main>
+<style>
+  h1 {
+    text-align: center;
+    font-weight: 400;
+  }
+</style>
+
+<h1>Recent Projects</h1>

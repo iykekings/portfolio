@@ -3,7 +3,8 @@
   import Icon from "./Icon.svelte";
   import { fly, fade } from "svelte/transition";
 
-  let navs = ["Projects", "Contact", "Blog", "Uses"];
+  let navs = ["Projects", "Contact", "Blog"];
+  // let navs = ["Projects", "Contact", "Blog", "Uses"];
   export let inactive;
   let width;
   let navState;
@@ -62,7 +63,7 @@
 
 <svelte:window bind:innerWidth={width} />
 {#if navState && inactive}
-  <nav in:fly={{ x: 200, duration: 1500 }} out:fly={{ x: 200, duration: 500 }}>
+  <nav in:fly={{ x: 200, duration: 1000 }} out:fly={{ x: 200, duration: 500 }}>
     {#each navs as nav}
       <Link to={nav.toLowerCase()}>
         <Icon icon={nav.toLowerCase()} width="1rem" />

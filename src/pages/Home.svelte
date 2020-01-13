@@ -40,4 +40,3 @@
     </Link>
   </div>
 </Container>
-<h1 style="margin: 0 auto">Recent Projects</h1>
