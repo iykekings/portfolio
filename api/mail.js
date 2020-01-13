@@ -8,7 +8,7 @@ function check(n, m, e) {
 }
 
 module.exports = async function (req, res) {
-  const { name, email, message } = JSON.parse(req.body);
+  const { name, email, message } = JSON.parse(req.body || "{}");
   const msg = {
     to: "offer-info@ikeze.dev",
     from: { email, name },
