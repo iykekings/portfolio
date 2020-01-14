@@ -3,7 +3,7 @@
   import Icon from "./Icon.svelte";
   import { fly, fade } from "svelte/transition";
 
-  let navs = ["Projects", "Contact", "Blog"];
+  let navs = ["Projects", "Contact"];
   // let navs = ["Projects", "Contact", "Blog", "Uses"];
   export let inactive;
   let width;
@@ -54,7 +54,11 @@
         font-size: 14px;
       }
       @media (max-width: 600px) {
-        margin-top: 12px;
+        padding: 0.5rem;
+        width: 100%;
+        &:hover {
+          background-color: #eeeeee;
+        }
       }
       &:hover {
         font-weight: bold;
@@ -74,7 +78,7 @@
     {/each}
     <a href="https://github.com/iykekings" target="blank">
       <Icon icon="github" width="1rem" />
-      Github
+      GitHub
     </a>
   </nav>
 {/if}
@@ -92,7 +96,7 @@
     {/each}
     <a href="https://github.com/iykekings" on:click={toggleNav} target="blank">
       <Icon icon="github" width="1rem" />
-      Github
+      GitHub
     </a>
   </nav>
 {/if}

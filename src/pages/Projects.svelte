@@ -20,8 +20,9 @@
     article {
       display: flex;
       flex-direction: column;
-      border: 1px #8080805c solid;
+      overflow: hidden;
       border-radius: 5px;
+      box-shadow: 3px 3px 11px #0000001f;
 
       .image {
         width: 100%;
@@ -85,7 +86,7 @@
         {#if pro.source}
           <a href={pro.link} target="blank" class="github">
             <Icon icon="github" width="1rem" />
-            Github
+            GitHub
           </a>
         {/if}
       </div>

@@ -8,10 +8,6 @@
     & > h1 {
       font-weight: 700;
       text-transform: capitalize;
-      &::first-letter {
-        // font-style: italic;
-        font-size: 3rem;
-      }
     }
   }
 </style>
