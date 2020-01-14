@@ -84,7 +84,7 @@
           </a>
         {/if}
         {#if pro.source}
-          <a href={pro.link} target="blank" class="github">
+          <a href={pro.source} target="blank" class="github">
             <Icon icon="github" width="1rem" />
             GitHub
           </a>
