@@ -62,7 +62,7 @@
     bit of everything else" />
   <meta property="og:url" content="https://ikeze.dev" />
   <meta property="og:image" content="./image/site_thumbnail.jpeg" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary" />
   <meta property="og:site_name" content="Ikeze.dev" />
   <title>Ikeze.dev</title>
 </svelte:head>
