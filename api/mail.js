@@ -7,26 +7,30 @@ function check(n, m, e) {
   return false;
 }
 
-module.exports = async function (req, res) {
-  const { name, email, message } = JSON.parse(req.body || "{}");
+module.exports = async function(req, res) {
+  const { name, email, message } = JSON.parse(req.body || '{}');
   const msg = {
-    to: "offer-info@ikeze.dev",
+    to: 'hello@ikeze.dev',
     from: { email, name },
     subject: `${name} wants to connect`,
     text: 'Sent from Portfolio contact form',
-    html: `<p>${message}</p>`,
+    html: `<p>${message}</p>`
   };
 
   if (check(name, message, email)) {
     try {
       const send = await sgMail.send(msg);
-      res.status(200).json({ message: send })
-
+      res.status(200).json({ message: send });
     } catch (error) {
-      res.status(401).json({ error: "It is not you, it us. Give us another chance" })
+      res
+        .status(401)
+        .json({ error: 'It is not you, it us. Give us another chance' });
     }
+  } else {
+    res
+      .status(401)
+      .json({
+        error: 'Ensure your email is valid and that you have filled all fields'
+      });
   }
-  else {
-    res.status(401).json({ error: "Ensure your email is valid and that you have filled all fields" });
-  }
-}
+};
