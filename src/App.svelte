@@ -9,6 +9,8 @@
   import Uses from "./pages/Uses.svelte";
   import NotFound from "./pages/NotFound.svelte";
   import Icon from "./components/Icon.svelte";
+  import Logo from "./components/Logo.svelte";
+  import Footer from "./components/Footer.svelte";
 
   export let url;
   const toggleNav = () => {
@@ -35,13 +37,6 @@
       align-items: center;
       padding: 0.5rem 16px;
     }
-    :global(& > :nth-child(1)) {
-      display: flex;
-      align-items: center;
-      font-size: 1.3rem;
-      color: #2a2a2a;
-      font-weight: 600;
-    }
     :global(div.menu) {
       display: none;
       @media (max-width: 600px) {
@@ -61,10 +56,7 @@
 
 <Router {url}>
   <header>
-    <Link to="/">
-      <Icon icon="logo" width="2rem" />
-      Ikeze.dev
-    </Link>
+    <Logo />
     <div class="spacer" />
     <Navbar inactive={navState} {toggleNav} />
     <Icon icon="menu" width="1.3rem" cls="menu" on:click={toggleNav} />
@@ -78,4 +70,5 @@
     <Route path="/" component={Home} />
     <Route component={NotFound} />
   </main>
+  <Footer />
 </Router>
