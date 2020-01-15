@@ -54,8 +54,11 @@
         font-size: 14px;
       }
       @media (max-width: 600px) {
-        padding: 0.5rem;
+        padding: 0.7rem 0.5rem;
         width: 100%;
+        font-size: 1rem;
+        border-bottom: 1px solid #80808033;
+        border-top: 0.5px solid #8080801c;
         &:hover {
           background-color: #eeeeee;
         }
@@ -69,7 +72,7 @@
 
 <svelte:window bind:innerWidth={width} />
 {#if navState && inactive}
-  <nav in:fly={{ x: 200, duration: 1000 }} out:fly={{ x: 200, duration: 500 }}>
+  <nav in:fly={{ x: 200, duration: 500 }} out:fly={{ x: 200, duration: 500 }}>
     {#each navs as nav}
       <Link to={nav.toLowerCase()}>
         <Icon icon={nav.toLowerCase()} width="1rem" />
@@ -84,10 +87,12 @@
 {/if}
 {#if !inactive && !navState}
   <nav
-    in:fly={{ x: 200, duration: 1500 }}
+    in:fly={{ x: 200, duration: 500 }}
     out:fly={{ x: 200, duration: 500 }}
     class:inactive>
-    <Icon icon="arrowRight" width="1.3rem" cls="close" on:click={toggleNav} />
+    <div>
+      <Icon icon="arrowRight" width="1.3rem" cls="close" on:click={toggleNav} />
+    </div>
     {#each navs as nav}
       <Link to={nav.toLowerCase()} on:click={toggleNav}>
         <Icon icon={nav.toLowerCase()} width="1rem" />

@@ -20,6 +20,7 @@
     z-index: 2;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     :global(a) {
       margin-top: 1rem;
     }
