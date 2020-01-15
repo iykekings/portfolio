@@ -7,6 +7,7 @@
   import Home from "./pages/Home.svelte";
   import Projects from "./pages/Projects.svelte";
   import Uses from "./pages/Uses.svelte";
+  import NotFound from "./pages/NotFound.svelte";
   import Icon from "./components/Icon.svelte";
 
   export let url;
@@ -75,5 +76,6 @@
     <Route path="projects" component={Projects} />
     <Route path="uses" component={Uses} />
     <Route path="/" component={Home} />
+    <Route component={NotFound} />
   </main>
 </Router>
