@@ -12,6 +12,15 @@
   }
 </style>
 
+<svelte:head>
+  <meta property="og:title" content="Blog | Ikechukwu Eze" />
+  <meta
+    property="og:description"
+    content="These some of my scribblings about tech, philosophy and some random
+    ideas" />
+  <meta property="og:url" content="https://ikeze.dev/blog" />
+  <title>Blog | Ikeze.dev</title>
+</svelte:head>
 <div class="blog">
   <h1>My scribblings about just anything</h1>
   <sub>Coming soon</sub>

@@ -54,6 +54,18 @@
   }
 </style>
 
+<svelte:head>
+  <meta property="og:title" content="Ikechukwu Eze" />
+  <meta
+    property="og:description"
+    content="This is my portfolio, including my projects, writings and a tiny
+    bit of everything else" />
+  <meta property="og:url" content="https://ikeze.dev" />
+  <meta property="og:image" content="./image/site_thumbnail.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:site_name" content="Ikeze.dev" />
+  <title>Ikeze.dev</title>
+</svelte:head>
 <Router {url}>
   <header>
     <Logo />

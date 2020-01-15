@@ -15,7 +15,6 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     padding: 2.5rem 8vw;
-    border-top: 1px solid #8080805c;
 
     article {
       display: flex;
@@ -28,6 +27,7 @@
         width: 100%;
         border-bottom: 1px solid #80808024;
         height: 200px;
+        box-shadow: 0px 1px 3px #00000021;
         img {
           object-fit: cover;
           width: 100%;
@@ -67,6 +67,14 @@
   }
 </style>
 
+<svelte:head>
+  <meta property="og:title" content="Projects | Ikechukwu Eze" />
+  <meta
+    property="og:description"
+    content="You can find some of my recent projects here" />
+  <meta property="og:url" content="https://ikeze.dev/projects" />
+  <title>Projects | Ikeze.dev</title>
+</svelte:head>
 <h1>Recent Projects</h1>
 <section class="projects">
   {#each projects as pro (pro.link)}

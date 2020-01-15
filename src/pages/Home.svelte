@@ -27,6 +27,9 @@
   }
 </style>
 
+<svelte:head>
+  <title>Ikeze.dev</title>
+</svelte:head>
 <Container>
   <Terminal {stdArray} />
   <div class="btn-containers" style="z-index: 2;">
