@@ -7,6 +7,8 @@
   <meta property="og:title" content="Contact | Ikechukwu Eze" />
   <meta property="og:description" content="You can contact me directly here" />
   <meta property="og:url" content="https://ikeze.dev/contact" />
+  <meta name="twitter:title" content="Contact | Ikechukwu Eze" />
+  <meta name="twitter:description" content="You can contact me directly here" />
   <title>Contact | Ikeze.dev</title>
 </svelte:head>
 <Container>

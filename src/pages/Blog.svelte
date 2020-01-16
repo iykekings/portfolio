@@ -19,6 +19,11 @@
     content="These some of my scribblings about tech, philosophy and some random
     ideas" />
   <meta property="og:url" content="https://ikeze.dev/blog" />
+  <meta name="twitter:title" content="Blog | Ikechukwu Eze" />
+  <meta
+    name="twitter:description"
+    content="These some of my scribblings about tech, philosophy and some random
+    ideas" />
   <title>Blog | Ikeze.dev</title>
 </svelte:head>
 <div class="blog">

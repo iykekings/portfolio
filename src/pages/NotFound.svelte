@@ -21,6 +21,10 @@
     property="og:description"
     content="This resource may have been moved or doesn't exist" />
   <meta property="og:url" content="https://ikeze.dev/404" />
+  <meta name="twitter:title" content="404 | Ikechukwu Eze" />
+  <meta
+    name="twitter:description"
+    content="This resource may have been moved or doesn't exist" />
   <title>404 | Ikeze.dev</title>
 </svelte:head>
 <div id="not-found">

@@ -4,6 +4,10 @@
     property="og:description"
     content="Some informations about me including contact infos." />
   <meta property="og:url" content="https://ikeze.dev/about" />
+  <meta name="twitter:title" content="About | Ikechukwu Eze" />
+  <meta
+    name="twitter:description"
+    content="Some informations about me including contact infos." />
   <title>About | Ikeze.dev</title>
 </svelte:head>
 <main>

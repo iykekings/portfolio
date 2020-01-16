@@ -61,9 +61,16 @@
     content="This is my portfolio, including my projects, writings and a tiny
     bit of everything else" />
   <meta property="og:url" content="https://ikeze.dev" />
-  <meta property="og:image" content="/site_thumbnail.jpeg" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://ikeze.dev/site_thumbnail.jpeg" />
   <meta property="og:site_name" content="Ikeze.dev" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ikezedev" />
+  <meta name="twitter:title" content="Ikechukwu Eze" />
+  <meta
+    name="twitter:description"
+    content="This is my portfolio, including my projects, writings and a tiny
+    bit of everything else" />
+  <meta name="twitter:image" content="https://ikeze.dev/site_thumbnail.jpeg" />
   <title>Ikeze.dev</title>
 </svelte:head>
 <Router {url}>

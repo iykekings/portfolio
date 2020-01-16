@@ -73,6 +73,8 @@
     property="og:description"
     content="You can find some of my recent projects here" />
   <meta property="og:url" content="https://ikeze.dev/projects" />
+  <meta name="twitter:title" content="Projects | Ikechukwu Eze" />
+  <meta name="twitter:description" content="You can contact me directly here" />
   <title>Projects | Ikeze.dev</title>
 </svelte:head>
 <h1>Recent Projects</h1>
